@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import Navbar from "./components/navbar";
 import LeftSide from "./components/leftside";
+import Aboutus from "./components/Aboutus";
 function App() {
   return (
     <Router>
@@ -11,6 +12,7 @@ function App() {
           <Navbar/>
           <LeftSide/>
         <Routes>
+          <Route path="/Aboutus" element={<Aboutus />} />
         </Routes>
       </div>
     </Router>

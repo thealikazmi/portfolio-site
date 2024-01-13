@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav style={{ backgroundColor: "#1E5D67" }}>
+      <nav className="" style={{ backgroundColor: "#1E5D67" }}>
         <div className="flex items-center justify-between py-7  px-4">
           <p className="text-white hover:scale-y-75 transition-all duration-500">
             Logo
