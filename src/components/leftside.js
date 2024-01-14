@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import connections from "./connections";
+import { FaGithub, FaInstagram, FaFacebook, FaLinkedin, FaHome } from 'react-icons/fa';
 import Home from "./home";
-import { FaGithub, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
-
 export default function Sidebar() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
 
@@ -24,16 +24,26 @@ export default function Sidebar() {
         onMouseLeave={handleMouseLeave}
       >
         <div className="flex py-10 px-10 h-screen flex-col items-end space-y-6 ">
-          <FaGithub size={32} />
-          <FaInstagram size={32} />
-          <FaFacebook size={32} />
-          <FaLinkedin size={32} />
+          <FaGithub
+            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            size={32}
+          />
+          <FaInstagram
+            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            size={32}
+          />
+          <FaFacebook
+            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            size={32}
+          />
+          <FaLinkedin
+            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            size={32}
+          />
         </div>
       </div>
 
-      <div className="flex-grow">
-        <Home />
-      </div>
+      <div className="flex-grow"></div>
     </div>
   );
 }

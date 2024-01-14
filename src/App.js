@@ -1,19 +1,30 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home";
+import LeftSide from "../src/components/leftside";
+import Home from "../src/components/home";
+import About from "../src/components/Aboutus";
 import Navbar from "./components/navbar";
-import LeftSide from "./components/leftside";
-import Aboutus from "./components/Aboutus";
+import Rightside from "./components/right";
+import Contact from "./components/Contactus";
+
 function App() {
   return (
     <Router>
-      <div className="App">
-          <Navbar/>
-          <LeftSide/>
-        <Routes>
-          <Route path="/Aboutus" element={<Aboutus />} />
-        </Routes>
+      <Navbar />
+      <div className="flex">
+        <div className="hidden md:flex">
+          <LeftSide />
+        </div>
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <div className="hidden md:flex">
+          <Rightside />
+        </div>
       </div>
     </Router>
   );

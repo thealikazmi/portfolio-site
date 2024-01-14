@@ -13,8 +13,12 @@
   position: relative;
   overflow: hidden;
 }
+.background
+{
+background: #05384d;
+}
 .frame-1 {
-  background: #05384d;
+  
   width: 1440px;
   height: 140px;
   position: absolute;

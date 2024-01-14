@@ -34,25 +34,31 @@ export default function Navbar() {
           </div>
 
           {/* Menu Items */}
-          <div
+          <ul
             className={`${
               isMenuOpen ? "flex flex-col items-end" : "hidden"
             } lg:flex lg:flex-row lg:space-x-10 mt-4 lg:mt-0`}
           >
-            <p className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <a href="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Myself
-            </p>
-            <p className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </a>
+            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+              Certifications
+            </a>
+            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+              Blogs
+            </a>
+            <a href="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Experience
-            </p>
+            </a>
             <p className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               My work
             </p>
-            <p className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Contact me
-            </p>
+            </a>
+        </ul>
           </div>
-        </div>
       </nav>
     </>
   );

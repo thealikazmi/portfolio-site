@@ -1,13 +1,13 @@
 import React from 'react';
 import '../App.css';
-import alipic from './dp.jpg';
+import alipic from './pic.png';
 export default function home()
 {
     return (
       <>
         <div
-          className=" h-screen flex   "
-          style={{ backgroundColor: "#1E5D77" }}
+          className=" h-screen flex background  "
+          
         >
           <div className=" ml-10 sm:ml-36 pt-20  ">
             <p className="text-white text-sm  sm:text-lg">Hi, This is</p>
