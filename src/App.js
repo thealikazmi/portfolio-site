@@ -6,7 +6,10 @@ import About from "../src/components/Aboutus";
 import Navbar from "./components/navbar";
 import Rightside from "./components/right";
 import Contact from "./components/Contactus";
-
+import Mywork from "./components/mywork";
+import Experiences from "./components/experience";
+import Certifications from "../src/components/certifications";
+import Blogs from "./components/Blogs"
 function App() {
   return (
     <Router>
@@ -20,6 +23,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/mywork" element={<Mywork />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/blogs" element={<Blogs />} />
+             <Route path="/experience" element ={<Experiences/>} />
           </Routes>
         </div>
         <div className="hidden md:flex">

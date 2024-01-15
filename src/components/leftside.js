@@ -25,23 +25,29 @@ export default function Sidebar() {
         onMouseLeave={handleMouseLeave}
       >
         <div className="flex py-10 px-10 h-screen flex-col items-end space-y-6 ">
-          <FaGithub
-            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            size={32}
-          />
-          <FaInstagram
-            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            size={32}
-          />
-          <FaFacebook
-            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            size={32}
-          />
+          <Link to="https://www.facebook.com/syedalikazmi2/" target="blank">
+            <FaFacebook
+              className=" text-blue-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size={32}
+            />
+          </Link>
+          <Link to="https://github.com/syedalikazmi1122" target="blank">
+            <FaGithub
+              className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size={32}
+            />
+          </Link>
+          <Link to="https://www.instagram.com/TheSyedalikazmi/" target="blank">
+            <FaInstagram
+              className="  text-pink-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size={32}
+            />
+          </Link>
           <Link to="https://www.linkedin.com/in/ali-kazmi-956865279/">
-          <FaLinkedin
-            className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            size={32}
-          />
+            <FaLinkedin
+              className=" text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size={32}
+            />
           </Link>
         </div>
       </div>

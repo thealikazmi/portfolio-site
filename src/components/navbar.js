@@ -40,26 +40,42 @@ export default function Navbar() {
               isMenuOpen ? "flex flex-col items-end" : "hidden"
             } lg:flex lg:flex-row lg:space-x-10 mt-4 lg:mt-0`}
           >
-            <Link to="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <Link
+              to="/about"
+              className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+            >
               Myself
             </Link>
-            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
-              Certifications
-            </Link>
-            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
-              Blogs
-            </Link>
-            <Link to="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <Link
+              to="/experience"
+              className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+            >
               Experience
             </Link>
             <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               My work
             </Link>
-            <Link to="/contact" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <Link
+              to="/certifications"
+              className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+            >
+              Certifications
+            </Link>
+            <Link
+              to="/blogs"
+              className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+            >
+              Blogs
+            </Link>
+
+            <Link
+              to="/contact"
+              className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+            >
               Contact me
             </Link>
-        </ul>
-          </div>
+          </ul>
+        </div>
       </nav>
     </>
   );
