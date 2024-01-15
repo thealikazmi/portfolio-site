@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               My work
             </Link>
-            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <Link to="/contact" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Contact me
             </Link>
         </ul>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import connections from "./connections";
 import { FaGithub, FaInstagram, FaFacebook, FaLinkedin, FaHome } from 'react-icons/fa';
 import Home from "./home";
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
 
@@ -36,10 +37,12 @@ export default function Sidebar() {
             className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             size={32}
           />
+          <Link to="https://www.linkedin.com/in/ali-kazmi-956865279/">
           <FaLinkedin
             className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             size={32}
           />
+          </Link>
         </div>
       </div>
 
