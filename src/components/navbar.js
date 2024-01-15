@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -39,24 +40,24 @@ export default function Navbar() {
               isMenuOpen ? "flex flex-col items-end" : "hidden"
             } lg:flex lg:flex-row lg:space-x-10 mt-4 lg:mt-0`}
           >
-            <a href="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            <Link to="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Myself
-            </a>
-            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </Link>
+            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Certifications
-            </a>
-            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </Link>
+            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Blogs
-            </a>
-            <a href="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </Link>
+            <Link to="/about" className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Experience
-            </a>
-            <p className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </Link>
+            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               My work
-            </p>
-            <a className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
+            </Link>
+            <Link className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300">
               Contact me
-            </a>
+            </Link>
         </ul>
           </div>
       </nav>
