@@ -15,16 +15,16 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex h-full">
       <div
-        className={`border inline-block border-solid pr-4 w-10 h-screen transition-all duration-300 ${
+        className={`border inline-block border-solid pr-4 w-10 h-full transition-all duration-300 ${
           isSidebarVisible ? "w-40" : "w-12"
         }`}
         style={{ backgroundColor: "#1E5D67", borderColor: "#1E5D67" }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="flex py-10 px-10 h-screen flex-col items-end space-y-6 ">
+        <div className="flex py-10 px-10 h-full flex-col items-end space-y-6 ">
           <Link to="https://www.facebook.com/syedalikazmi2/" target="blank">
             <FaFacebook
               className=" text-blue-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
