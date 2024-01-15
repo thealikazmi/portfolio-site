@@ -38,8 +38,7 @@ export default function experience() {
               functionalities which the application had to perform. The
               technologies i have used for this project are React, Node,
               Express, MongoDB,Tailwind css.
-              <span className="text-blue-300">Full Stack Developer </span> at
-              Freelancing Platforms.
+            
               <div className="flex space-x-5 mt-2">
                 <FaReact
                   size={50}
