@@ -4,7 +4,7 @@ import alipic from "./pic.png";
 export default function Aboutus() {
   return (
     <>
-      <div className=" h-screen flex  background  "
+      <div id="about" className=" h-screen flex  background  "
        style={{backgroundImage:`${alipic}`}}>
         <div>
           <div className="flex mt-10 ml-3 sm:ml-10 items-center">

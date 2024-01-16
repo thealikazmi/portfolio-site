@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function Contactus() {
   return (
-    <div className="background h-screen">
+    <div id="contact" className="background h-screen">
       <div className="flex flex-col items-center pt-20 h-full">
         <h1 className="text-3xl text-center text-white font-bold">
           Lets Connect

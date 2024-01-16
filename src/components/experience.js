@@ -7,7 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 export default function experience() {
     return (
       <>
-        <div className="background h-screen ">
+        <div id="experience" className="background h-fit pb-10 ">
           <div className="flex pt-10 ml-3 sm:ml-10 items-center">
             <div
               className=" text-xl sm:text-3xl font-semibold hover:cursor-pointer"

@@ -22,7 +22,7 @@ import Datainsight5 from "../components/myworkimages/datainsight5.png";
 export default function mywork() {
   return (
     <>
-      <div className="h-full w-screen background">
+      <div id="mywork"className="h-fit w-screen background">
         <div className="flex pt-10 ml-3 sm:ml-10 items-center">
           <div
             className=" text-xl sm:text-3xl font-semibold hover:cursor-pointer"
@@ -44,7 +44,7 @@ export default function mywork() {
           Al Falah o Behbood Foundation
         </h1>
         {/* the div containing pictures */}
-        <div className="ml-10 sm:ml-44 grid  sm:flex carousel-wrapper">
+        <div className="ml-10 w-fit sm:ml-16 grid  sm:flex carousel-wrapper">
           <Carousel
             className=" h-1/6 mt-5 w-1/3 sm:w-2/4"
             infiniteLoop
@@ -75,7 +75,7 @@ export default function mywork() {
           </Carousel>
 
           <div className=" w-fit  sm:ml-28 bg-slate-900 h-fit p-2 border rounded-lg mt-6">
-            <p className=" text-white w-56 sm:w-96 text-xs sm:text-xl opacity-80">
+            <p className=" text-white w-56 sm:w-80 text-xs sm:text-xl opacity-80">
               {" "}
               This project was a react and supabase powered website functioning
               to collect donations for students laptops artists. The donations
@@ -107,7 +107,7 @@ export default function mywork() {
           Data Insight Project
         </h1>
         {/* the div containing pictures  */}
-        <div className="ml-10 sm:ml-44 grid  sm:flex carousel-wrapper">
+        <div className="ml-10 sm:ml-16 grid  sm:flex carousel-wrapper">
           {/* Replace with your own carousel images */}
 
           <Carousel
@@ -134,7 +134,7 @@ export default function mywork() {
           </Carousel>
 
           <div className=" w-fit  sm:ml-28 bg-slate-900 h-fit p-2 border rounded-lg mt-6">
-            <p className="text-white w-56 sm:w-96 text-xs sm:text-xl opacity-80 ">
+            <p className="text-white w-56 sm:w-80 text-xs sm:text-xl opacity-80 ">
               This project was completed during my internship at Data Insight
               Lab. I was responsible to create the web Application of there
               system. i have created responsives interfaces covering several
