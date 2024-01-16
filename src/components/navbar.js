@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="fixed w-full h-16 z-10"
+        className="fixed w-screen h-16 z-10"
         style={{ backgroundColor: "#1E5D67" }}
       >
         <div className="flex items-center justify-between py-7  px-4">

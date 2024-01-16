@@ -6,8 +6,8 @@ export default function home() {
   return (
     <>
       <div className=" h-screen flex background  ">
-        <div className=" ml-10 sm:ml-36 pt-20  ">
-          <p className="text-white text-sm  sm:text-lg">Hi, This is</p>
+        <div className=" ml-10 sm:ml-36 pt-32  ">
+          <p className="text-white text-sm opacity-80 sm:text-xl">Hi, This is</p>
           <h2
             className=" text-2xl sm:text-8xl font-bold "
             style={{
