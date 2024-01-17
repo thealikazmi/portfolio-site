@@ -8,14 +8,21 @@ export default function Navbar() {
     setMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <>
       <nav
-        className="fixed w-screen h-16 z-10"
-        style={{ backgroundColor: "#1E5D67" }}
+        className="relative sm:fixed w-screen h-16 z-10 bg-gray-800"
+        style={{ backgroundColor: isMenuOpen ? "#1E5D67" : "" }}
       >
-        <div className="flex items-center justify-between py-7  px-4">
-          <p className="text-white hover:scale-y-75 transition-all duration-500">
+        <div className="flex items-center justify-between py-7 px-4 flex-wrap">
+          <p
+            className="text-white hover:scale-y-75 transition-all duration-500"
+            onClick={handleLinkClick}
+          >
             Logo
           </p>
 
@@ -37,22 +44,19 @@ export default function Navbar() {
             </svg>
           </div>
 
-          {/* Menu Items */}
-          <div
-            className={`${
-              isMenuOpen ? "flex flex-col items-end" : "hidden"
-            } lg:flex lg:flex-row lg:space-x-10 mt-4 lg:mt-0`}
-          >
+          {/* Navbar Links - Display horizontally on larger screens */}
+          <div className="hidden lg:flex lg:flex-row lg:space-x-10">
             <Link
               to="about"
               offset={-60}
               smooth={true}
               duration={1000}
               className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              onClick={handleLinkClick}
             >
               Myself
             </Link>
-
+            
             <Link
               to="experience"
               smooth={true}
@@ -99,6 +103,68 @@ export default function Navbar() {
               Contact me
             </Link>
           </div>
+
+          {/* Grid Menu - Display on mobile screens */}
+          {isMenuOpen && (
+            <div className="grid justify-end lg:hidden w-screen pr-10 mt-4">
+              <Link
+                to="about"
+                offset={-60}
+                smooth={true}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                Myself
+              </Link>
+
+              <Link
+                to="experience"
+                smooth={true}
+                offset={-60}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                Experience
+              </Link>
+              <Link
+                to="mywork"
+                smooth={true}
+                offset={-60}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                My work
+              </Link>
+
+              <Link
+                to="certifications"
+                smooth={true}
+                offset={-50}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                Certifications
+              </Link>
+              <Link
+                to="blogs"
+                smooth={true}
+                offset={-60}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                Blogs
+              </Link>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={1000}
+                className="text-white transition duration-500 hover:translate-y-[-2px] cursor-pointer hover:text-green-300"
+              >
+                Contact me
+              </Link>
+              {/* Add other links as needed */}
+            </div>
+          )}
         </div>
       </nav>
     </>
