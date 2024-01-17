@@ -4,8 +4,11 @@ import alipic from "./pic.png";
 export default function Aboutus() {
   return (
     <>
-      <div id="about" className=" h-screen flex  background  "
-       style={{backgroundImage:`${alipic}`}}>
+      <div
+        id="about"
+        className=" h-screen flex  background  "
+        style={{ backgroundImage: `${alipic}` }}
+      >
         <div>
           <div className="flex mt-10 ml-3 sm:ml-10 items-center">
             <div
@@ -49,9 +52,9 @@ export default function Aboutus() {
                   <span className="text-blue-300">Full Stack Developer </span>{" "}
                   at Freelancing Platforms.
                 </p>
-                <p className="text-xs sm:text-lg text-white  mt-10 sm:ml-20 opacity-80 sm:w-96">
+                <p className="text-xs sm:text-lg text-white mt-10 sm:ml-20 opacity-80 sm:w-96">
                   My Tech Stack includes :
-                  <span className="flex space-x-1 sm:space-x-6">
+                  <span className="flex space-x-3 sm:space-x-6 space-y-1 sm:space-y-2">
                     <ul className="space-y-2 w-fit mt-2 text-blue-300">
                       <li className="w-24 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         Java Script{" "}
@@ -92,7 +95,7 @@ export default function Aboutus() {
                       <li className="w-fit sm:w-24 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         MongoDb{" "}
                       </li>
-                    </ul>
+                    </ul>{" "}
                   </span>
                 </p>
               </li>
@@ -100,7 +103,7 @@ export default function Aboutus() {
           </div>
           <div className=" border-b-2 border-white mt-10 w-1/3 sm:w-1/2  ml-14 sm:ml-96   opacity-50"></div>
         </div>
-        <div className="flex  items-center   -ml-16 sm:ml-0 sm:h-screen sm:items-end   opacity-75">
+        <div className="flex  items-start   -ml-16 sm:ml-0 sm:h-screen sm:items-end   opacity-75">
           <img className="  " src={alipic} alt="aa" />
         </div>
       </div>
