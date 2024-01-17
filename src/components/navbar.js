@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-
+import Logo from "./kazmilogo.png"
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -18,13 +18,10 @@ export default function Navbar() {
         className="relative sm:fixed w-screen h-16 z-10 bg-gray-800"
         style={{ backgroundColor: isMenuOpen ? "#1E5D67" : "" }}
       >
-        <div className="flex items-center justify-between py-7 px-4 flex-wrap">
-          <p
-            className="text-white hover:scale-y-75 transition-all duration-500"
-            onClick={handleLinkClick}
-          >
-            Logo
-          </p>
+        <div className="flex  justify-between py-7 px-4 flex-wrap">
+         
+            <img src={Logo} className="-ml-5 -mt-10 sm:-mt-16 left-0  h-24 sm:h-36 w-24 sm:w-36" />
+         
 
           {/* Hamburger Icon for Mobile */}
           <div className="cursor-pointer lg:hidden" onClick={toggleMenu}>
