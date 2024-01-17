@@ -25,7 +25,9 @@ function App() {
             <Blogs id="blogs" />
             <Contact id="contact" />
           </div>
+          <div className="hidden sm:block">
           <Rightside />
+          </div>
         </div>
       </div>
     </Router>
