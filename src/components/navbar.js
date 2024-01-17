@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className=" sm:sticky top-0 w-screen h-16 z-10 bg-gray-800"
+        className="relative sm:fixed w-screen h-16 z-10 bg-gray-800"
         style={{ backgroundColor: isMenuOpen ? "#1E5D67" : "" }}
       >
         <div className="flex  justify-between py-7 px-4 flex-wrap">
