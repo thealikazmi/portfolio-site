@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c5cbe4a.css",
-    "main.js": "/static/js/main.36bedcd4.js",
+    "main.css": "/static/css/main.59d13b91.css",
+    "main.js": "/static/js/main.93778e9c.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/pic.png": "/static/media/pic.bcd31cade95e666b8f13.png",
     "static/media/datainsight5.png": "/static/media/datainsight5.3db0b8d80a9ea100a142.png",
@@ -13,16 +13,17 @@
     "static/media/datainsight1.png": "/static/media/datainsight1.e429b79ca41443a51036.png",
     "static/media/foundation1.png": "/static/media/foundation1.1b5688ca7070a16108f1.png",
     "static/media/foundation5.png": "/static/media/foundation5.9476abe1e996a857cd88.png",
+    "static/media/kazmilogo.png": "/static/media/kazmilogo.4b0d20f4363ac5c4f0f9.png",
     "static/media/foundation4.png": "/static/media/foundation4.e50ea432accaae6ded6f.png",
     "static/media/datainsight3.png": "/static/media/datainsight3.5d66986d237e2b56b4ce.png",
     "static/media/datainsight4.png": "/static/media/datainsight4.10d450e406fb7ebf8432.png",
     "index.html": "/index.html",
-    "main.5c5cbe4a.css.map": "/static/css/main.5c5cbe4a.css.map",
-    "main.36bedcd4.js.map": "/static/js/main.36bedcd4.js.map",
+    "main.59d13b91.css.map": "/static/css/main.59d13b91.css.map",
+    "main.93778e9c.js.map": "/static/js/main.93778e9c.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c5cbe4a.css",
-    "static/js/main.36bedcd4.js"
+    "static/css/main.59d13b91.css",
+    "static/js/main.93778e9c.js"
   ]
 }
