@@ -57,7 +57,7 @@ export default function experience() {
                   size={40}
                 />
               </div>
-              <div className=" flex border-b-4 opacity-45 ml-24 mt-6 border-white w-46"></div>
+              
             </p>
           </div>
           <div className=" ml-5 sm:ml-40 mt-5">
@@ -85,7 +85,7 @@ export default function experience() {
                 />
   
               </div>
-              <div className=" flex border-b-4 opacity-45 ml-24 mt-6 border-white w-46 mb-2"></div>
+              
             </p>
           </div>
         </div>

@@ -13,20 +13,18 @@ import Experience from "./components/experience";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="flex">
-        <div className="hidden md:flex">
-        </div>
-        <div className="w-screen">
-          <Home  />
-          <About  id="about"           />
-          <Experience id="experience" />
-          <Mywork id="mywork" />
-          <Certifications id="certifications" />
-          <Blogs id="blogs" />
-          <Contact id="contact" />
-        </div>
-        <div className=" hidden md:flex w-screen">
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <div className="flex ">
+          <div>
+            <Home />
+            <About id="about" />
+            <Experience id="experience" />
+            <Mywork id="mywork" />
+            <Certifications id="certifications" />
+            <Blogs id="blogs" />
+            <Contact id="contact" />
+          </div>
           <Rightside />
         </div>
       </div>

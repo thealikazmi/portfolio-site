@@ -22,7 +22,7 @@ import Datainsight5 from "../components/myworkimages/datainsight5.png";
 export default function mywork() {
   return (
     <>
-      <div id="mywork"className="h-fit w-screen background">
+      <div id="mywork"className="h-fit pb-2 w-screen background">
         <div className="flex pt-10 ml-3 sm:ml-10 items-center">
           <div
             className=" text-xl sm:text-3xl font-semibold hover:cursor-pointer"

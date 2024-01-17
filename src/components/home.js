@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export default function home() {
   return (
     <>
-      <div className=" h-screen flex background  ">
+      <div className="w-screen h-screen flex  background  ">
         <div className=" ml-10 sm:ml-36 pt-32  ">
           <p className="text-white text-sm opacity-80 sm:text-xl">
             Hi, This is

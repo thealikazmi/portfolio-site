@@ -3,7 +3,7 @@ import React from "react";
 export default function certifications() {
   return (
     <>
-      <div id="blogs" className="background  h-screen">
+      <div id="blogs" className="background w-screen h-screen">
         <div className="flex pt-10 ml-3 sm:ml-10 items-center">
           <div
             className=" text-xl sm:text-3xl font-semibold hover:cursor-pointer"
