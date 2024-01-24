@@ -41,7 +41,7 @@ export default function Aboutus() {
                   <span className="text-blue-300">
                     Fast University ,Islamabad campus.
                   </span>{" "}
-                  I was born and bought up in Islamabad,Pakistan .
+                  I was born and bought up in Islamabad, Pakistan .
                 </p>
                 <p className="  w-48 sm:w-96 ml-3 sm:ml-48 mt-2 sm:mt-8 opacity-80 text-sm sm:text-xl">
                   I have worked as a React Developer Intern at{" "}
